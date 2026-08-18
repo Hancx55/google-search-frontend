@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script src="javascript.js" defer></script>
         <title>Search</title>
     </head>
     <body>
@@ -18,23 +19,25 @@
             <h2>Advanced Search</h2>
             <p id="title">Find pages with:</p>
             
-            <form action="https://www.google.com/search">
+            <form onSubmit="combineQuery()" action="https://www.google.com/search">
                 <div id="advForm">
                     <div class="formItem">
                         <p>All of these words:</p>
-                        <input type="text" name="q">
+                        <input type="text" name="all" id="all">
                     </div>
                     
                     <div class="formItem">
                         <p>This exact word or phrase:</p>
-                        <input type="text" name="epq">
+                        <input type="text" name="exact" id="exact">
                     </div>
 
                     <div class="formItem">
                         <p>None of these words:</p>
-                        <input type="text" name="eq">
+                        <input type="text" name="none" id="none">
                     </div>
                 </div>
+
+                <input type="hidden" id="q" name="q">
 
                 <input id="advSubmit" type="submit" value="advanced search">
             </form>
