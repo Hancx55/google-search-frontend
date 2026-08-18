@@ -32,6 +32,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav img {
+    width: 10rem;
+    padding: 0.6rem;
+    margin-right: auto;
+}
+
 #search {
     display: flex;
     flex-direction: column;
@@ -101,4 +107,44 @@ nav a:hover {
         font-size: 1rem;;
     }
 
+}
+
+/* advanced search */
+hr {
+    width: 95vw;
+}
+
+#advSection {
+    padding: 1rem 5rem;
+}
+
+#advSection h2 {
+    padding: 1rem 0;
+}
+
+#title {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;;
+}
+
+.formItem {
+    display: grid;
+    grid-template-columns: 7rem 15rem;
+    padding: 1.5rem 0;
+}
+
+.formItem p {
+    padding-left: 1rem;;
+}
+
+.formItem input{
+    border-radius: 10px;
+    border: solid 1px;
+    height: 86px;
+    font-size: 1.5rem;
+}
+
+#advSubmit {
+    padding: 1rem;
+    border-radius: 10px;
 }

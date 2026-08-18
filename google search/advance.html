@@ -11,23 +11,33 @@
             <a href="index.html">Text Search</a>
             <a href="image.html">Image Search</a>
             <a class="open" href="advance.html">Advanced Search</a>
+            <img src="images/googleLogo.jpg" alt="google logo">
         </nav>
-
-        <section id="search">
-
-            <div id="logo">
-                <img src="images/googleLogo.jpg" alt="google logo">
-            </div>
+        <hr>
+        <section id="advSection">
+            <h2>Advanced Search</h2>
+            <p id="title">Find pages with:</p>
             
-            <form id="google" action="https://www.google.com/search">
-                <input id="searchBar" type="text" name="q">
-                <div id="buttons">
-                    <input id="submitBtn" type="submit" value="Google Search">
-                    <input id="lucky btn" type="button" value="I'm feeling lucky">
+            <form action="https://www.google.com/search">
+                <div id="advForm">
+                    <div class="formItem">
+                        <p>All of these words:</p>
+                        <input type="text" name="q">
+                    </div>
+                    
+                    <div class="formItem">
+                        <p>This exact word or phrase:</p>
+                        <input type="text" name="epq">
+                    </div>
+
+                    <div class="formItem">
+                        <p>None of these words:</p>
+                        <input type="text" name="eq">
+                    </div>
                 </div>
-                
+
+                <input id="advSubmit" type="submit" value="advanced search">
             </form>
-            
         </section>
         
         
