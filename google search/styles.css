@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+.open {
+    border: solid 1px black;
+}
+
 nav {
     display: flex;
     flex-direction: row-reverse;
@@ -20,6 +24,8 @@ nav a {
     margin: 1rem;
     color: black;
     text-decoration: none;
+    border-radius: 10px;
+    padding: 0.6rem;
 }
 
 nav a:hover {
